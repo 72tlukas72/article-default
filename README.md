@@ -14,4 +14,4 @@ or
 
 ## Configuration
 
-- Configure e-mail address in: Administration > Plugins > Výchozí články
+- Configure in: Administration > Plugins > Výchozí články
