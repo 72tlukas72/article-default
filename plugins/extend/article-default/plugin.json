@@ -1,0 +1,20 @@
+{
+    "$schema": "../../../system/schema/extend.json",
+    "name": "Výchozí články",
+    "description": "Plugin upravuje výchozí nastavení při psaní článků.",
+    "authors": [
+        {"name": "Lukáš Tesař", "url": "https://tlukas.eu"}
+    ],
+    "version": "1.0",
+    "environment": {
+        "system": "^8.0"
+    },
+    "config_defaults": {
+        "schválený": true,
+        "hodnocení": false,
+        "informace_u_položek": false
+    },
+    "events": [
+        {"event": "admin.article.default", "script": "event/article_default.php"}
+    ]
+}
