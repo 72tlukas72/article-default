@@ -5,14 +5,20 @@
     "authors": [
         {"name": "Lukáš Tesař", "url": "https://tlukas.eu"}
     ],
-    "version": "1.0",
+    "version": "1.1",
     "environment": {
         "system": "^8.0"
     },
+    "actions": {
+        "config": "ConfigAction"
+    },
     "config_defaults": {
-        "schválený": true,
-        "hodnocení": false,
-        "informace_u_položek": false
+        "approved": true,
+        "rating": false,
+        "information": false
+    },
+    "langs": {
+        "article-default": "lang"
     },
     "events": [
         {"event": "admin.article.default", "script": "event/article_default.php"}
